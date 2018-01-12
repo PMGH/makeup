@@ -36,6 +36,7 @@ class ProductContainer extends React.Component {
   }
 
   handleSortSelect(sortedProducts){
+    console.log(sortedProducts);
     this.setState({ displayedProducts: sortedProducts });
   }
 
@@ -45,9 +46,9 @@ class ProductContainer extends React.Component {
         <HeaderImageSet filteredData={this.state.displayedProducts} />
         <ProductList
           rawData={this.state.products}
-          filteredData={this.state.displayedProducts} onFilterSelect={this.handleFilterSelect}
-          url={this.state.url}
-          onSortSelect={this.handleSortSelect}/>
+          filteredData={this.state.displayedProducts}
+          onFilterSelect={this.handleFilterSelect}
+          onSortSelect={this.handleSortSelect} />
       </div>
     );
   }

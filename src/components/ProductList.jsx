@@ -7,10 +7,6 @@ import SortButton from './SortButton';
 class ProductList extends React.Component {
   constructor(props){
     super(props);
-    this.state = {
-      products: [],
-      displayedProducts: []
-    }
     this.handleSelectedFilter = this.handleSelectedFilter.bind(this);
     this.handleSelectedSort = this.handleSelectedSort.bind(this);
   }
@@ -25,7 +21,7 @@ class ProductList extends React.Component {
   }
 
   handleSelectedSort(sortBy){
-    const sortedProducts = _.sortBy(this.state.displayedProducts, sortBy);
+    const sortedProducts = _.sortBy(this.props.filteredData, sortBy);
     this.props.onSortSelect(sortedProducts);
   }
 
