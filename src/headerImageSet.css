@@ -1,0 +1,15 @@
+#header-image-set {
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 3% 0;
+  margin: 3% 0;
+  width: 100%;
+}
+
+.header-image {
+  height: auto;
+  width: 14%;
+}
