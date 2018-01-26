@@ -21,7 +21,7 @@ const Product = (props) => {
 
       <td><div className="product-shades-container">{colours}</div></td>
 
-      <td className="product-price">{item.price_sign}{item.price} ({item.currency})</td>
+      <td className="product-price">{item.price_sign}{item.price}</td>
     </tr>
   );
 }
